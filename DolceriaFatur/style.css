@@ -1,0 +1,200 @@
+@font-face {
+  font-family: FontLight;
+  src: url(/testFont/FoundersGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: FontRegular;
+  src: url(/testFont/FoundersGrotesk-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  min-height: 150vh;
+  background-color: #242423;
+  color: #fafafa;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 56px;
+  justify-content: space-between;
+  align-items: center;
+  background: #242423;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 96vw;
+  margin: 0 auto;
+}
+
+.events {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: FontLight;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.events:hover {
+  opacity: 0.8;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding: 3px 0;
+}
+nav ul li {
+  margin-left: 35px;
+}
+
+nav ul li a {
+  font-family: FontLight;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fafafa;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+.intro-section {
+  margin-bottom: 4vw;
+  padding-top: 11vw;
+  width: 96vw;
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 7vw;
+  font-family: FontRegular;
+  line-height: 0.8;
+  letter-spacing: -0.009em;
+}
+
+.subtitle {
+  margin-top: -0.5vw;
+  font-size: 1.4vw;
+  font-family: FontLight;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-weight: 500 !important;
+}
+.grid-images {
+  width: 96vw;
+  margin: 0 auto;
+  margin-top: 64px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  width: 22.5vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.lebron {
+  object-position: top !important;
+}
+
+.card-image {
+  overflow: hidden;
+  transition: all;
+  height: 500px;
+  width: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  margin-bottom: -7px;
+  border-bottom: 2px solid #2a2a2a;
+  object-fit: cover;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  font-family: fontLight;
+  border-top: solid 1px #2a2a2a;
+  margin-top: 18px;
+  padding-top: 17px;
+}
+
+.card-description {
+  font-size: 0.95vw;
+  font-family: FontLight;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.card-title {
+  font-size: 1.5vw;
+  font-family: FontLight;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section {
+    padding-top: 20vw;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .grid-images {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .card {
+    width: 100%;
+  }
+  .card-image {
+    height: 300px;
+  }
+  .card-text {
+    font-size: 0.8vw;
+  }
+  .card-description {
+    font-size: 0.8vw;
+  }
+  .card-title {
+    font-size: 1.2vw;
+  }
+}
