@@ -234,6 +234,39 @@ footer {
   }
 }
 
+/* responsive for tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro-section {
+    padding-top: 20vw;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .grid-images {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .card {
+    width: 100%;
+  }
+  .card-image {
+    height: 300px;
+  }
+  .card-text {
+    font-size: 0.8vw;
+  }
+  .card-description {
+    font-size: 0.8vw;
+  }
+  .card-title {
+    font-size: 1.2vw;
+  }
+}
+
 .footer-icons {
   margin-top: 10px;
 }
