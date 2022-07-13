@@ -120,6 +120,7 @@ nav ul li a:hover {
   margin-top: 20px;
   display: grid;
   grid-gap: 30px;
+  /* max 4 colums */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -161,7 +162,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -170,7 +171,7 @@ nav ul li a:hover {
 }
 
 .visible {
-  visibility: visible;
+  opacity: 1;
   pointer-events: all;
 }
 
@@ -201,6 +202,13 @@ footer {
   margin-top: 10px;
   font-family: FontLight;
   font-size: 18px;
+}
+
+/* media for big screens */
+@media screen and (min-width: 768px) {
+  .grid-images {
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+  }
 }
 
 @media screen and (max-width: 768px) {

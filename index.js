@@ -8,10 +8,10 @@ var slideUp = {
 ScrollReveal({ reset: true })
 
 ScrollReveal().reveal('nav', slideUp)
+ScrollReveal().reveal('.grid-images', slideUp)
 ScrollReveal().reveal('footer', { delay: 100 })
 ScrollReveal().reveal('.title', slideUp)
 ScrollReveal().reveal('.subtitle', { delay: 600 })
-ScrollReveal().reveal('.card-image', { delay: 100 })
 
 const returnTopBtn = document.querySelector('.return-top-button')
 
