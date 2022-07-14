@@ -29,3 +29,24 @@ returnTopBtn.addEventListener('click', () => {
 
   window.scrollTo({ top: 0, behavior: 'smooth' })
 })
+
+const activePanel = document.querySelector('.active-img')
+
+const images = document.querySelectorAll('img')
+
+images.forEach((image) => {
+  image.addEventListener('click', () => {
+    //create a image inside the active panel
+    const img = document.createElement('img')
+    img.src = image.src
+    activePanel.appendChild(img)
+    activePanel.style.display = 'flex'
+    document.body.style.overflow = 'hidden'
+
+    activePanel.addEventListener('click', () => {
+      activePanel.style.display = 'none'
+      activePanel.innerHTML = ''
+      document.body.style.overflow = 'auto'
+    })
+  })
+})
