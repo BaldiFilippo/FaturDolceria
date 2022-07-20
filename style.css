@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+audio {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -202,6 +206,10 @@ footer {
   margin-bottom: 0;
 }
 
+.icon {
+  margin-right: 10px;
+}
+
 .footer-container span {
   margin-top: 10px;
   font-family: FontLight;
@@ -220,11 +228,18 @@ footer {
     padding-top: 20vw;
   }
 
+  .icon {
+    height: 10px;
+    width: 10px;
+    margin-right: 20px;
+  }
+
   .title {
-    font-size: 6rem;
+    font-size: 4rem;
+    margin-bottom: 20px;
   }
   .subtitle {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .grid-images {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -277,6 +292,7 @@ footer {
 
   .title {
     font-size: 6rem;
+    margin-bottom: 20px;
   }
   .subtitle {
     font-size: 2rem;
