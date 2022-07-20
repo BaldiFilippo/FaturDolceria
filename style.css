@@ -59,11 +59,37 @@ nav {
 }
 
 .events {
-  font-size: 23px;
+  font-size: 35px;
   font-weight: 400;
   font-family: FontLight;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  animation: colors 7s ease-in-out infinite;
+}
+
+@keyframes colors {
+  0% {
+    color: white;
+  }
+  8% {
+    color: yellow;
+  }
+  24% {
+    color: red;
+  }
+  40% {
+    color: blue;
+  }
+
+  66% {
+    color: green;
+  }
+  82% {
+    color: pink;
+  }
+  100% {
+    color: white;
+  }
 }
 
 .events:hover {
@@ -279,7 +305,7 @@ footer {
   }
 
   .events {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
